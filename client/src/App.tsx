@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import { BrowserRouter } from 'react-router-dom';
