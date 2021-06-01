@@ -4,16 +4,18 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { ADMIN_ROUTE, LOGIN_ROUTE, SHOP_ROUTE } from "../utils/consts";
 import { observer } from 'mobx-react';
 import { Container, Button, Navbar, Nav } from 'react-bootstrap';
+import { logout } from '../http/userAPI';
 
 const NavBar = observer(() => 
 {
     const { user } = useContext(Context);
     const history = useHistory();
 
-    const logout = () =>
+    const log_out = () =>
     {
         user.set_user({});
         user.set_is_auth(false);
+        logout();
     }
 
     return (
@@ -41,7 +43,7 @@ const NavBar = observer(() =>
                         <Button 
                             variant={"outline-light"} 
                             className="ml-2"  
-                            onClick={ () => { logout(); history.push(SHOP_ROUTE) } }
+                            onClick={ () => { log_out(); history.push(SHOP_ROUTE) } }
                         >
                             Выйти
                         </Button>

@@ -52,6 +52,7 @@ const Auth = observer(() =>
                         placeholder="Введите email..."
                         value={email}
                         onChange={e => set_email(e.target.value)}
+                        type="email"
                     />
                     <Form.Control
                         className="mt-3"
