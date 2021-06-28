@@ -1,5 +1,7 @@
 # AshenOneMarket
 
+You need to create DB in PostgreSQL (PgAdmin) and create .env file in server folder with PostgreSQL access constants and other
+
 Comands for the terminal opened inside project's folder:
 
 npm i - to install all dependencies
