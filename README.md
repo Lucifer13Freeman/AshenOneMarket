@@ -2,7 +2,7 @@
 
 A little fullstack market project
 
-Backend: Node.js, express, PostgreSQL, Sequelize (ORM для PostgreSQL)
+Backend: Node.js, express, PostgreSQL, Sequelize (ORM for PostgreSQL)
 
 Frontend: React, Bootstrap, SCSS, Mobx, axios
 
